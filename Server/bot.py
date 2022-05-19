@@ -10,7 +10,7 @@ HELP_MSG = "List of requests: \n time - returns current time \n name - returns n
 
 class Bot:
     def __init__(self):
-        self.name = "Eduard"
+        self.name = "Pepicek"
         self.values = dict()
         self.values["28.04.2022"] = str(5)
         
