@@ -5,6 +5,8 @@ on:
   pull_request:
     branches:
       - '*'
+  push:
+    branches: [ feature ]
 jobs:
   build:
     runs-on: ubuntu-latest
