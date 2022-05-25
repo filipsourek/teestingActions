@@ -19,10 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then -m pip install -r requirements.txt; fi
 
-    - name: lint
-      run: |
-        flake8 src/*.py --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 src/*.py --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics        
+ 
     - name: tests with pytest
       run: |
                 pytest
